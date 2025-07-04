@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:700|Nunito:700|Fredoka:700|Inter:400|Open+Sans:400|Quicksand:400|Bungee:700|Press+Start+2P:700&display=swap');
+
+/* Theme palette based on provided design guidance */
+:root {
+  --background-gradient: linear-gradient(135deg, #f6fff9 0%, #e4f0ff 100%);
+  --background-flat: #f8f8fc;
+  --primary-1: #4e73df;
+  --primary-2: #fbbf24;
+  --accent-hot-pink: #ff6b81;
+  --accent-green: #10b981;
+  --accent-indigo: #6366f1;
+  --app-shadow: 0 2px 24px 0 rgba(78,115,223,0.08);
+  --border-radius: 18px;
+  --font-head: 'Poppins', 'Nunito', 'Fredoka', Arial, sans-serif;
+  --font-body: 'Inter', 'Open Sans', 'Quicksand', Arial, sans-serif;
+  --font-alt-title: 'Bungee', 'Press Start 2P', cursive;
+  --fab-color: var(--primary-1);
+  --fab-shadow: 0 4px 24px 0 rgba(78,115,223,0.17);
+}
+
+/* Soft card and button shades */
+.card {
+  background: #fff;
+  box-shadow: var(--app-shadow);
+  border-radius: var(--border-radius);
+}
+
+.fab {
+  background: var(--fab-color);
+  box-shadow: var(--fab-shadow);
+  color: #fff;
+  font-weight: 700;
+}
+
+.app-font-alt-title {
+  font-family: var(--font-alt-title);
+}
+
+.app-heading {
+  font-family: var(--font-head);
+  font-weight: 700;
+}
+
+body, .app-body {
+  background: var(--background-gradient);
+  font-family: var(--font-body);
+}
+
+@media (max-width: 768px) {
+  .card { border-radius: 9px; }
+}
